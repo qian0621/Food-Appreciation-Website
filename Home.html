@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yum! | Home</title>
+    <link rel="icon" href="img/Yumm.png">
+    <link rel="stylesheet" type="text/css" href="Yum!.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--table nav bar: https://jsfiddle.net/dLBYe/ -->
+    <table class="menubar">
+      <tbody>
+        <tr class="menubar">
+          <td style="background-color:crimson;"><img class=icon src="img/home.png" alt="Home"></td>
+          <td onclick="window.location.href='Contribute.html';">Contribute</td>
+          <td onclick="window.location.href='About.html';">About</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <figure class="carousel-item active">
+          <a href="Recipes.html?BikaAmbonHoneycombCake"><img src="img/food/Bika Ambon (Honeycomb Cake).jpeg" alt="Bika Ambon (Honeycomb Cake)"></a>
+          <!--https://asianfoodnetwork.com/en/recipes/cuisine/indonesian/Bika-Ambon-Honeycomb-Cake.html-->
+          <figcaption class="carousel-caption">
+            <h1>Bika Ambon Honeycomb Cake</h1>
+          </figcaption>
+        </figure>
+        <figure class="carousel-item">
+          <a href="Recipes.html?AyamGorengCabeIjoFriedChickenwithGreenChili"><img src="img/food/Ayam Goreng Cabe Ijo (Fried Chicken with Green Chili).jpeg" alt="Ayam Goreng Cabe Ijo (Fried Chicken with Green Chili)"></a>
+          <!-- https://asianfoodnetwork.com/en/recipes/cuisine/indonesian/Ayam_Goreng_Cabe_Ijo.html -->
+          <figcaption class="carousel-caption">
+            <h1>Ayam Goreng Cabe Ijo</h1>
+          </figcaption>
+        </figure>
+        <figure class="carousel-item">
+          <a href="Recipes.html?PanFriedDumplings"><img src="img/food/pan_fried_dumplings.jpg" alt="Pan Fried Dumplings"></a>
+          <!-- https://asianfoodnetwork.com/content/dam/afn/global/en/recipes/pan-fried-dumplings/AFN_pan_fried_dumplings_main_image.jpg -->
+          <figcaption class="carousel-caption">
+            <h1>Pan Fried Dumplings</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="imgallery even">
+      <div class="column">
+        <figure class="image-item" style={{ fontSize: width / 12 }}>
+          <figcaption class="overlay">Samosa</figcaption>
+          <img src="img/food/Samosa.jpeg" alt="Samosa">
+          <!--https://www.foodnetwork.com/recipes/samosa-12112498-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Ice Cream</figcaption>
+          <img src="img/food/Ice Cream.jpeg" alt="Ice Cream">
+          <!--https://www.pinterest.com/pin/cinnamon-ice-cream-photography-kamile-kave-food-photography--607563805970070230/-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Spring Roll</figcaption>
+          <img src="img/food/Spring-Rolls.webp" alt="Spring Roll">
+          <!--https://www.recipetineats.com/spring-rolls/-->
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="image-item">
+          <figcaption class="overlay">Coconut Tapioca Pearls<br>
+            Trân Châu Trắng Nhân Dừa</figcaption>
+          <img src="img/food/Coconut Tapioca Pearls - Trân Châu Trắng Nhân Dừa.jpeg" alt="Coconut Tapioca Pearls - Trân Châu Trắng Nhân Dừa">
+          <!--https://asianfoodnetwork.com/en/recipes/cuisine/asian-desserts/coconut-tapioca-pearls.html-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Burrito</figcaption>
+          <img src="img/food/Burrito.jpeg" alt="Burrito">
+          <!--https://www.foodnetwork.com/recipes/ellie-krieger/breakfast-burrito-recipe-1953146-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Waffles</figcaption>
+          <img src="img/food/waffles.jpeg" alt="Waffles">
+          <!-- https://www.pinterest.com/pin/70931762853387495/-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Kimchi</figcaption>
+          <img src="img/food/Kimchi.jpeg" alt="Kimchi">
+          <!--https://depositphotos.com/252535776/stock-photo-korean-appetizer-kimchi.html-->
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="image-item">
+          <figcaption class="overlay">Pancakes</figcaption>
+          <img src="img/food/eggless-buckwheat-pancake-02.jpg.webp" alt="Eggless Buckwheat Pancakes">
+          <!--https://www.jcookingodyssey.com/2020/02/24/eggless-buckwheat-pancakes/-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Vegetable Sushi</figcaption>
+          <img src="img/food/Vegetable Sushi.jpeg" alt="Vegetable Sushi">
+          <!--https://www.foodnetwork.com/recipes/masaharu-morimoto/vegetable-sushi-recipe/try-this-at-home-sushi-->
+        </figure>
+        <figure class="image-item">
+          <figcaption class="overlay">Satay</figcaption>
+          <img src="img/food/Satay.jpeg" alt="Satay">
+          <!--https://omnivorescookbook.com/beef-satay/-->
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>

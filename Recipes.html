@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yum! | Recipes</title>
+    <link rel="icon" href="img/Yumm.png">
+    <link rel="stylesheet" type="text/css" href="Yum!.css">
+  </head>
+  <body>
+    <table class="menubar">
+      <tbody>
+        <tr class="menubar">
+          <td onclick="window.location.href='Home.html';"><img class=icon src="img/home.png" alt="Home"></td>
+          <td onclick="window.location.href='Contribute.html';">Contribute</td>
+          <td onclick="window.location.href='About.html';">About</td>
+        </tr>
+      </tbody>
+    </table>
+      <img id="headerimg" src="" alt="">
+    <div class="body">
+      <h1 id="dishname"></h1>
+      <p id="dishinfo"></p>
+      <div class="imgallery">
+        <ul class="column" id="ingredients">
+          <h3>Ingredients</h3>
+          <p id="servings"></p>
+        </ul>
+        <hr>
+        <ol class="column" id="steps">
+          <h3>Steps</h3>
+        </ol>
+      </div>
+    </div>
+    <script type="text/javascript" src="Recipes.js"></script>
+  </body>
+</html>

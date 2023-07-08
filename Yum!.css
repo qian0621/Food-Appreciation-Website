@@ -1,0 +1,130 @@
+*{
+  font-family: "Trebuchet MS", sans-serif;
+}
+.menubar{
+  width: 100%;
+  background-color: black;
+}
+tr.menubar{
+  align: "center";
+}
+tr.menubar td{
+  padding: 0;
+  text-align: center;
+  max-width: 20px;
+  color: white;
+  overflow: hidden;
+  background-color: indigo;
+}
+tr.menubar td:hover{
+  opacity: 0.8;
+}
+.icon{
+  width: 1.5em;
+}
+.body{
+  margin: 2vh 4vw;
+}
+
+.carousel-item img{
+  width: 100vw;  /*rem = font-size on html*/
+  height: 90vh;
+  object-fit: cover;
+}
+#headerimg{
+  width: 100vw;
+}
+.carousel-caption h1{
+  /*https://css-tricks.com/adding-stroke-to-web-text/*/
+  -webkit-text-stroke: 1px black;
+  margin-bottom: 0;
+  text-shadow:
+ -1px -1px black,
+  1px -1px black,
+  -1px 1px black,
+   1px 1px black;
+}
+/*.carousel-caption p{
+  color: black;
+  text-shadow:
+ -1px -1px white,
+  1px -1px white,
+  -1px 1px white,
+   1px 1px white;
+}*/
+.even{
+  padding: 3vh 4vw;
+}
+.imgallery{
+  /*mobile all displayed in a column*/
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.imgallery .column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.image-item{
+  margin: 0;
+  position: relative;
+}
+.image-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-item:hover img{
+  opacity: 0.3;
+}
+.overlay{
+  position:absolute;
+  opacity: 0;
+  transition: .5s ease;
+  padding: 5vw;
+  overflow: hidden;
+  font-size: 5vw;
+}
+.image-item:hover .overlay{
+  opacity: 1;
+}
+@media only screen and (min-width: 768px){
+  /*for big screens*/
+  .imgallery{
+    flex-direction: row;
+  }
+  .overlay{
+    padding: 2vw;
+    font-size: 2.5vw;
+  }
+}
+.even > * { flex: 1; } /*Make columns even*/
+.about{
+  background-color: beige;
+}
+.about p {
+  font-size: 1.5rem;
+}
+.about p a{
+  color: black;
+}
+.form {
+  background-color: beige;
+}
+#headerimg{
+  height: 87vh;
+  object-fit: cover;
+}
+#dishname{
+  text-align: center;
+}
+#dishinfo{
+  text-align: center;
+}
+#servings{
+  list-style: none;
+}
+#ingredients, #steps{
+  list-style-position: inside;
+}
